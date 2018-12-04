@@ -1,0 +1,164 @@
+
+
+body {
+  background: linear-gradient(180deg, #ffffff 0%, #c6beb6 100%);
+}
+
+.head-page {
+  overflow: hidden;
+}
+.pres {
+  width: 100%;
+}
+
+.article-page-title {
+  text-transform: uppercase;
+  font-family: "Gotham Bold";
+  font-weight: bolder;
+  font-size: 48px;
+  line-height: 58px;
+  border-left: #99cc66 solid 2px;
+  display: flex;
+  flex-direction: column;
+  color: #99cc66;
+  margin-top: 5px;
+  margin-left: 2vw;
+  margin-bottom: 5px;
+}
+
+.article-page-title img {
+  height: 50px;
+  width: 110px;
+}
+
+/*************** Section 2 **************/
+
+.article-description {
+  font-family: "Gotham Medium";
+  height: auto;
+  width: 100vw;
+}
+.article-description h2 {
+  padding-top: 20px;
+  height: 50px;
+  background-color: #99cc66;
+  top: 50%;
+  color: #333333;
+  margin: 14px 0 12px 0;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 10px 101px 0px rgba(0, 0, 0, 0.4) inset;
+}
+.article-description h3 {
+  color: #333333;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.span-left,
+.span-right {
+  position: absolute;
+  display: block;
+  width: calc(20% - 20px);
+  height: 2px;
+  background: #99cc66;
+}
+
+.span-left {
+  top: 1.5vh;
+  left: 10vw;
+}
+
+.span-right {
+  right: 10vw;
+  bottom: 1.5vh;
+}
+
+.article-description .p-before-ul {
+  margin-bottom: 0px;
+}
+
+.article-description ul li {
+  padding: 10px;
+  text-align: justify;
+  font-family: "Gotham Light";
+  line-height: 18px;
+}
+
+.article-description p {
+  line-height: 160%;
+  margin: 14px 0;
+  line-height: 22px;
+  padding: 10px;
+  text-align: justify;
+  font-family: "Gotham Light";
+}
+.article-description div {
+  height: 80px;
+  width: 100%;
+  padding: 5px;
+  border-top: 2px solid #99cc66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-description div div {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 2px solid #99cc66;
+}
+.article-description div img {
+  width: 90%;
+}
+.article-description h2 {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1100px) {
+  .article-page-title {
+    display: none;
+  }
+  .article-description {
+    padding-right: 5vw;
+  }
+
+  .pres {
+    padding-top: 105px;
+    width: 50%;
+    float: right;
+    margin-left: 5vw;
+  }
+  .article-description h2 {
+    width: 40%;
+    position: absolute;
+    top: 105px;
+    left: 5vw;
+    margin-top: 0;
+    color: #ffffff;
+  }
+  .article-description p.description {
+    line-height: 180%;
+    text-align: justify;
+  }
+  .article {
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 180px;
+  }
+  .article h3 {
+    text-align: center;
+  }
+
+  .span-left,
+  .span-right {
+    display: none;
+  }
+}
